@@ -4,7 +4,7 @@ terraform {
 
 # The simplest possible Terraform module: it just outputs "Hello, World!"
 module "hello" {
-    source = "./hello_module"
+    source = "github.com/wasimj/terraform-hello"
 }
 
 output "hello_world" {
