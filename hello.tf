@@ -3,6 +3,10 @@ terraform {
 }
 
 # The simplest possible Terraform module: it just outputs "Hello, World!"
+module "hello" {
+    source = "./hello_module"
+}
+
 output "hello_world" {
-  value = "Hello 1"
+  value = module.hello.hello_world
 }
